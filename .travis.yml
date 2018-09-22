@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: z82mU+VmC9OG6aHQKZ4uc4RG29bjC9tQ5vT14JkNbHT26SrgqnzPysAIlys66t6rSTv9IDu2j5FaiTP40qdyh8OT3Uw/MJMs2TzbZ6ekU3XAJ/d5WYVjZvTKlXBwvIbbtt/YscnwKngRxxWJzlCJ7toYujfU4wJbdetRNO7Fz0j3csKlboGmv0cSeZvezMESQbkNyoavDnenIQqI/wIfIp66jWWpVMvdhPLxBdhK0y4KgM7FKOm8ZLO3rPaUpLeolgMuHlKr7W/2D7Cus+mJjRVjkpG96GVuJ15ag5tgao3aOpKbA5HOx4nQeyxDnwxqbG1r1IJL5FPRYqaXcavfBYftDCOiGlSuW5EZeOqwrKdtmZ5DD239MSyS95Qs7Av0iQLXtpcOszCw5R1Fw5qGcryQcT+Gdj1+biINeKaanXTkiK8k/ZmwD0GvF4IrcTs9XQWEZNT42/eabfhNsBQb5QQ6pwnKPNj0A6MzJuAz+NXh1HriVfaSjBxWl6Pt4N5G5OZHvBQfeUbPQGsYaRD58gcKQjG8DbLNe53AIrKPbNFJ4/Op6sRyWpzFK5E/Wh6DrOdW+W8nGwlA2STdFyHcWP1pbCgn/Uwrqusqira1zpniC7uvWB1ih7O9fnIScnypDGZnzwW0BDiwluRi7CJPugalXzp78RhZ+ExRGHv/9kk=
+  app: floating-wave-80202
+  on:
+    repo: norkuy/react-hot-cold-with-tests
