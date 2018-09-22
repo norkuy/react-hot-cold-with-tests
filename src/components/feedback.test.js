@@ -7,7 +7,7 @@ describe('<Feedback />', () => {
     it('Renders without crashing', () => {
         shallow(<Feedback />);
     });
-    it('Displays correct feedback and \'Guess again!\' feedback, () => {
+    it('Displays correct feedback and \'Guess again!\ feedback', () => {
         const feedback = 'You\'re hot!';
         let wrapper = shallow(<Feedback feedback={ feedback } guessCount={ 1 } />);
     
